@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <script defer src="index.js"></script>
-        <title>Inbox/Messenger</title>
-    </head>
-    <body>
-        <link rel="stylesheet" href="Extras/">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script defer src="inbox-header.js"></script>
+    <script defer src="footer.js"></script>
 
-        <header>
-            <div id="myheader"></div>
-        </header>
-
-        <div class="inbox-page">
-            <div class="chat">
-                <div class="sidebar">
-                    <div class="sidebar-elements">
-                        <div class="sidebar-element">
-                            <span class="material-symbols-outlined all">
-                                list
-                            </span>
-                            <a class="all">All</a>
-                        </div>
-                        <div class="count sidebar-element">1</div>
-                    </div>
-                    <div class="sidebar-elements">
-                        <div class="sidebar-element">
-                            <span class="material-symbols-outlined your-inbox">
-                                inbox
-                            </span>
-                            <a class="your-inbox">Your inbox</a>
-                        </div>
-                        <div class="count sidebar-element">1</div>
-                    </div>
-                    <div class="sidebar-elements">
-                        <div class="sidebar-element">
-                            <span class="material-symbols-outlined mentioned">
-                                alternate_email
-                            </span>             
-                            <a class="mentioned">Mentioned</a>
-                        </div>
-                        <div class="count sidebar-element">1</div>
-                    </div>
-                    <div class="sidebar-elements">
-                        <div class="sidebar-element">
-                            <span class="material-symbols-outlined unassigned">
-                                person_filled
-                            </span>
-                            <a class="unassigned">Unassigned</a>
-                        </div>
-                        <div class="count sidebar-element">1</div>
-                    </div>
-                </div>
+    <title>Inbox/Messenger</title>
+</head>
+<body>
     
-                <div class="chat-list">
-                    
-                </div>
+    <header>
+        <div id="myinboxheader"></div>
+    </header>
+
+    <div class="chat">
+        <div class="sidebar">
+            <h3>Inbox</h3>
+            <div class="all-chats sidebar-element">
+                <a class="sidebar-element-a">
+                    <img src="Extras/list_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="sidebar-element-a-img">
+                    <div class="sidebar-element-a-element">
+                        <h5 class="sidebar-element-a-element-h5">All</h5>
+                        <div class="sidebar-element-a-element-count">1</div>
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div class="your-inbox sidebar-element">
+                <a class="sidebar-element-a">
+                    <img src="Extras/inbox_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="sidebar-element-a-img">
+                    <div class="sidebar-element-a-element">
+                        <h5 class="sidebar-element-a-element-h5">Your inbox</h5>
+                        <div class="sidebar-element-a-element-count">1</div>
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div class="mentioned sidebar-element">
+                <a class="sidebar-element-a">
+                    <img src="Extras/alternate_email_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="sidebar-element-a-img">
+                    <div class="sidebar-element-a-element">
+                        <h5 class="sidebar-element-a-element-h5">Mentioned</h5>
+                        <div class="sidebar-element-a-element-count">1</div>
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div class="unassigned sidebar-element">
+                <a class="sidebar-element-a">
+                    <img src="Extras/person_filled_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="sidebar-element-a-img">
+                    <div class="sidebar-element-a-element">
+                        <h5 class="sidebar-element-a-element-h5">Unassigned</h5>
+                        <div class="sidebar-element-a-element-count">1</div>
+                    </div>
+                </a>
             </div>
         </div>
 
-        <div class="page">
-            
+        <div class="chats">
+            <div class="chats-header">
+                <img src="" alt="">svg
+                <h5>header</h5>
+            </div>
+
+            <div class="chats-sort-filter">
+                <div class="sort">
+                    <div class="open">open</div>
+                    <div class="closed">closed</div>
+                </div>
+                <div class="filter">
+                    <div class="newest">newest</div>
+                    <div class="oldest">oldest</div>
+                    <div class="priority">priority</div>
+                </div>
+            </div>
+
+            <div class="chats-list"></div>
         </div>
 
-        <footer>
-            <div id="myfooter"></div>
-        </footer>
+        <div class="chat-container">
 
-    </body>
+        </div>
+
+        <div class="chat-details">
+
+        </div>
+    </div>
+
+    <footer>
+        <div id="myfooter"></div>
+    </footer>
+
+</body>
 </html>
