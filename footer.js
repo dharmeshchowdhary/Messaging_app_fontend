@@ -1,4 +1,3 @@
-
 b = myfooter.innerHTML = `
     <div class="dock">
         <div class="docsubdiv-1">
@@ -48,5 +47,17 @@ b = myfooter.innerHTML = `
                 <h2 class="profile dock-element-h2">Profile</h2>
             </a>
         </div>
+
+        <div class="theme">
+            <input type="checkbox" id="switch">
+            <label for="switch">
+                <div class="slider">
+                    <img class="dark-mode-img" src="/Extras/dark_mode_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    <img class="light-mode-img" src="/Extras/light_mode_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                </div>
+            </label>
+        </div>
     </div>
+
+    
 `;

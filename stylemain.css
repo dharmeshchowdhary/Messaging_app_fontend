@@ -357,3 +357,79 @@ footer{
 .dock-element-h2:hover, .dock-element-img:hover{
     color:rgb(168, 57, 168);
 }
+
+/*  --------------------------- Dark-mode slider --------------------- */
+.theme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.theme input{
+    visibility: hidden;
+}
+.theme label{
+    width: 3rem;
+    height: 1.5rem;
+    border: 0.1rem solid white;
+    border-radius: 05rem;
+    color: black;
+    border-radius: 0.75rem;
+}
+.theme label:hover {
+    cursor: pointer;
+}
+.slider{
+    top:0.14rem;
+    right: 1.67rem;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.theme input:checked + label > .slider{
+    /* left:3.4rem; */
+    right: 0.17rem;
+    transition: 0.2s;
+}
+
+.slider > .dark-mode-img, .light-mode-img{
+    background-color: transparent;
+    width: 1rem;
+    padding: 0.1rem;
+    position: absolute;
+}
+.slider > .light-mode-img{
+    visibility: hidden;
+}
+.theme input:checked + label > .slider > .dark-mode-img{
+    animation: dark-mode-slider 0.01s linear 1 forwards;
+}
+.theme input:checked + label > .slider > .light-mode-img{
+    animation: light-mode-slider 0.01s linear 1 forwards;
+}
+
+@keyframes dark-mode-slider {
+    0%{
+        visibility: visible;
+    }
+    50%{
+        fill: transparent
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes light-mode-slider {
+    0%{
+        visibility: hidden;
+    }
+    50%{
+        fill: transparent;
+    }
+    100%{
+        visibility: visible;
+    }
+}
